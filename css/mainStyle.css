@@ -17,3 +17,14 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.containerLogo h1 {
+  margin:0;
+  align-self: center;
+}
+
+.img_Logo {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
