@@ -25,14 +25,18 @@ function ratingRight() {
 
 
 var imagesArray = ["iphonex.png", "samsunggalaxys8.png"];
+var namesArray = ["Iphone X", "Samsung Galaxy S8"];
 
 function loadRandomPhone() {
-  alert("Load Script Random image phone");
+  console.log("Load Script Random image phone");
   var num = Math.floor(Math.random() * 2); // 0...6
-  document.canvas.src = 'images/'+ imagesArray[num];
-  
+  document.canvas.src = 'images/' + imagesArray[num];
+
+
+  document.getElementById('leftName').innerHTML = namesArray[num]
 
   var num2 = Math.floor(Math.random() * 2); // 0...6
   document.canvas2.src = 'images/'+ imagesArray[num2];
+  document.getElementById('rightName').innerHTML = namesArray[num2]
 }
 
