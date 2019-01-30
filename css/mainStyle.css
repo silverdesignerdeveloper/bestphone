@@ -63,7 +63,6 @@ body {
 .container_phone {
   display: flex;
   justify-content: center;
-  border:1px solid red;
 }
 
 .container_phone figcaption {
@@ -74,7 +73,6 @@ body {
   display: flex;
   align-items: center;
   width:500px;
-  border: 1px solid blue;
 }
 
 .ios_image_phone {
@@ -87,4 +85,26 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.button {
+  padding:10px;
+  width:100px;
+  border:1px solid transparent;
+  border-radius:20px;
+  background-color:#fe9a48;
+  color:white;
+  cursor: pointer;
+}
+
+.button:hover {
+  animation-name: background-color;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #fd6528;
+  }
 }
