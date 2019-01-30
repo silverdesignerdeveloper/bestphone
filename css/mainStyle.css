@@ -29,6 +29,7 @@ body {
   max-width: 100%;
   display: block;
   height: auto;
+  padding:15px;
 }
 
 .container_logo h1 {
@@ -42,7 +43,6 @@ body {
 }
 
 .navigation_bar nav {
-  border:1px solid red;
   margin:0;
 }
 
@@ -53,8 +53,38 @@ body {
 .navigation_bar nav ul li{
   display: flex;
   padding:20px;
+  margin-right:10px;
 }
 
 .navigation_bar nav ul a {
-  text-decoration: none;
+  color:#512500;
+}
+
+.container_phone {
+  display: flex;
+  justify-content: center;
+  border:1px solid red;
+}
+
+.container_phone figcaption {
+  text-align: center;
+}
+
+.phoneVersus {
+  display: flex;
+  align-items: center;
+  width:500px;
+  border: 1px solid blue;
+}
+
+.ios_image_phone {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.android_image_phone {
+  width: 100%;
+  height: auto;
+  display: block;
 }
