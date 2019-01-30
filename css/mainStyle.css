@@ -6,6 +6,9 @@ body {
 
 .header {
   display:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #fd6528;
   border-bottom: 4px solid #ccc;
   width: 100%;
@@ -13,18 +16,45 @@ body {
   color: white;
 }
 
-.containerLogo {
+.header__wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.containerLogo h1 {
+.container_logo {
+  display: flex;
+}
+
+.container_logo .img_Logo {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.container_logo h1 {
   margin:0;
   align-self: center;
 }
 
-.img_Logo {
-  max-width: 100%;
-  display: block;
-  height: auto;
+.navigation_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation_bar nav {
+  border:1px solid red;
+  margin:0;
+}
+
+.navigation_bar nav ul {
+  display: inline-flex;
+}
+
+.navigation_bar nav ul li{
+  display: flex;
+  padding:20px;
+}
+
+.navigation_bar nav ul a {
+  text-decoration: none;
 }
